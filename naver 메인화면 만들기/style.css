@@ -1,0 +1,104 @@
+body{
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container{
+    display: grid;
+    border: 1px solid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    
+}
+
+header{
+    grid-area: header;
+    /* background-color: rgb(255, 75, 75); */
+}
+
+nav {
+    background-color: rgb(255, 255, 127);
+}
+
+main {
+    grid-area: main;
+    background-color: aquamarine;
+}
+
+section {
+    background-color: rgb(97, 97, 253);
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(255, 195, 83);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(177, 94, 255);
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerItem{
+    flex-basis: 50px;
+}
+
+.topMenu{
+    display: flex;
+    padding: 10px;
+    color: rgb(96, 96, 96);
+}
+.topMenuItem:nth-child(1){
+    margin-right: auto;
+    font-size: 25px;
+    
+    
+}
+.topMenuItem:nth-child(2){
+    margin-left: auto;
+    font-size: 30px;  
+}
+.topMenuItem:nth-child(2) span{
+    margin-left: 15px;
+}
+.headerItem:nth-child(2){
+    margin: auto;
+}
+.searchForm{ 
+    display: flex;
+    width:600px;
+    border: 1px solid rgb(76, 196, 76);
+    border-radius: 30px;
+    font-size: 30px;  
+}
+.searchForm input{
+    width:430px;
+    height:40px;  
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:none
+}
+.searchForm span{
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+.searchForm span .fa-keyboard{
+    color : rgb(152, 152, 152);
+}
+
+.searchForm span .fa-caret-down{
+    font-size: 15px;
+    color : rgb(76, 196, 76);
+}
+
+.searchForm span .fa-magnifying-glass{
+    color : rgb(96, 228, 96);
+}
