@@ -19,7 +19,7 @@ header{
 }
 
 nav {
-    background-color: rgb(255, 255, 127);
+    /* background-color: rgb(255, 255, 127); */
 }
 
 main {
@@ -41,6 +41,8 @@ footer {
     background-color: rgb(177, 94, 255);
 }
 
+
+/* 헤더 */
 .headerContainer {
     display: flex;
     flex-direction: column;
@@ -68,18 +70,18 @@ footer {
 .topMenuItem:nth-child(2) span{
     margin-left: 15px;
 }
-.headerItem:nth-child(2){
+/* .headerItem:nth-child(2){
     margin: auto;
-}
+} */
 .searchForm{ 
     display: flex;
-    width:600px;
+    width:650px;
     border: 1px solid rgb(76, 196, 76);
     border-radius: 30px;
     font-size: 30px;  
 }
 .searchForm input{
-    width:430px;
+    width:460px;
     height:40px;  
     margin-left: 10px;
     margin-bottom: 10px;
@@ -89,6 +91,10 @@ footer {
     margin: 5px;
     text-align: center;
     padding-top: 5px;
+}
+.searchForm span .fa-n{
+    margin-left: 20px;
+    color : rgb(76, 196, 76);
 }
 .searchForm span .fa-keyboard{
     color : rgb(152, 152, 152);
@@ -101,4 +107,37 @@ footer {
 
 .searchForm span .fa-magnifying-glass{
     color : rgb(96, 228, 96);
+}
+
+/* nav 메뉴 */
+.headerItem:nth-child(3){
+    margin: auto;
+}
+.headerItem nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.headerItem nav .navItem{
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+
+}
+.headerItem nav .navItem .icon{
+    border: solid 1px rgb(234, 234, 234);
+    font-size: 30px;
+    color: rgb(76, 196, 76);
+    border-radius: 15px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 1px 1px 3px 1px rgb(234, 234, 234);
+    margin-bottom: 5px;
+}
+
+.headerItem nav .navItem .iconName{
+    font-size: 14px;
+    text-align: center;
 }
