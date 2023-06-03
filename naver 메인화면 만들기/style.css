@@ -7,9 +7,9 @@ body{
     display: grid;
     border: 1px solid;
     grid-template-areas: 
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+    "header header header header header"
+    "main main main aside aside"
+    "footer footer footer footer footer";
     
 }
 
@@ -70,9 +70,11 @@ footer {
 .topMenuItem:nth-child(2) span{
     margin-left: 15px;
 }
-/* .headerItem:nth-child(2){
+
+/* 검색창 */
+.headerItem:nth-child(2){
     margin: auto;
-} */
+}
 .searchForm{ 
     display: flex;
     width:650px;
@@ -140,4 +142,44 @@ footer {
 .headerItem nav .navItem .iconName{
     font-size: 14px;
     text-align: center;
+}
+
+/* main */
+main{
+    margin-top: 50px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.mainContainer section{
+    margin-top: 10px;
+}
+.mainContainer section:nth-child(1){
+    height: 100px;
+    background-color: rgb(255, 255, 201);
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+
+.mainContainer section:nth-child(2){
+    border: 1px solid;
+}
+
+.mainContainer section:nth-child(3){
+    border: 1px solid;
+}
+.mainContainer section:nth-child(4){
+    border: 1px solid;
+}
+.newsItem:nth-child(3){
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid;
+}
+/* aside */
+aside{
+    margin-top: 50px;
 }
