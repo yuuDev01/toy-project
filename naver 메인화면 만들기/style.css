@@ -24,7 +24,7 @@ nav {
 
 main {
     grid-area: main;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 section {
@@ -147,8 +147,12 @@ footer {
 /* main */
 main{
     margin-top: 50px;
+    /* margin: 0 20px 0 0; */
 }
 
+
+
+/* 메인 컨테이너  */
 .mainContainer{
     display: flex;
     flex-direction: column;
@@ -156,29 +160,116 @@ main{
 }
 .mainContainer section{
     margin-top: 10px;
+    border: 2px solid rgb(220, 220, 220);
+    background-color: white;
+    border-radius: 5px;  
 }
 .mainContainer section:nth-child(1){
     height: 100px;
     background-color: rgb(255, 255, 201);
-    margin: 0 20px 0 0;
     text-align: center;
+    
 }
 
 .mainContainer section:nth-child(2){
-    border: 1px solid;
+    /* padding: 20px 0; */
 }
-
+.mainContainer section:nth-child(2) hr{
+    border: 1px solid rgb(220, 220, 220);
+}
 .mainContainer section:nth-child(3){
-    border: 1px solid;
+    
 }
 .mainContainer section:nth-child(4){
-    border: 1px solid;
+    
 }
+
+/* 뉴스 */
+.newsItem:nth-child(1){
+    font-size: 17px;
+    color: gray;
+    margin: 20px;
+    font-weight: 600;
+}
+.newsItem:nth-child(1) span{
+    margin-right: 5px;
+}
+.newsItem:nth-child(1) .slice{
+    color: rgb(220, 220, 220);
+    font-weight: 100;
+}
+.newsItem:nth-child(1) .newstand{
+    color: black;
+}
+
+.newsItem:nth-child(2){
+    background-color: rgb(244, 246, 249);
+    margin: 15px 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+
 .newsItem:nth-child(3){
     display: grid;
+    margin: 15px 15px;
     grid-template-columns: repeat(6, 1fr);
-    border: 1px solid;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    
 }
+.newsItem:nth-child(3) .newsName{
+    border: 1px solid rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+.newsItem:nth-child(5){
+    padding: 15px;
+    text-align: center;
+    margin: 5px;
+}
+.newsItem:nth-child(5) .circle{
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 50%;
+    padding: 10px 16px;
+}
+.newsItem:nth-child(5) span{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* 쇼핑 */
+.shoppingContainer{
+
+}
+
+.shoppingItem:nth-child(1){
+    font-size: 17px;
+    color: gray;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.shoppingItem:nth-child(1) span{
+    margin-right: 5px;
+}
+.shoppingItem:nth-child(1) .slice{
+    color: rgb(220, 220, 220);
+    font-weight: 100;
+}
+
+.shoppingItem:nth-child(1) .shopping{
+    color: black;
+}
+
+
 /* aside */
 aside{
     margin-top: 50px;
