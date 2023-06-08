@@ -268,8 +268,82 @@ main{
 .shoppingItem:nth-child(1) .shopping{
     color: black;
 }
+.shoppingItem:nth-child(2){
+    display: flex;
+    margin: 15px 15px;
+}
+.shoppingItem:nth-child(2) .todayShopping1{
+background-color: rgb(244, 246, 249);
+padding: 15px;
+border-radius: 5px;
+font-size: 14px;
+}
 
+.shoppingItem{
 
+}
+
+.shoppingItem .items{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.shoppingItem .items:nth-child(1){
+    
+
+}
+.shoppingItem .items:nth-child(1) .items1{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+
+}
+
+.items1 .item .img{
+    width: 80px;
+    height: 100px;
+    background-color: gray;
+
+}
+
+.shoppingItem .items:nth-child(1) .items2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.items:nth-child(1) .items2 .item{
+    border: 2px solid rgb(220, 220, 220);
+    background-color: rgb(230, 233, 235);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.items:nth-child(1) .items2 .item:nth-child(2){
+    display: flex;
+}
+
+.shoppingItem .items:nth-child(3){
+   /* 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shoppingItem .items:nth-child(3) span{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.shoppingItem .items:nth-child(3) .circle{
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 50%;
+    padding: 10px 16px;
+}
 /* aside */
 aside{
     margin-top: 50px;
