@@ -324,7 +324,7 @@ main{
 
 }
 
-.items1 .item .img{
+.shoppingItem .items1 .item .img{
     width: 80px;
     height: 100px;
     background-color: rgb(219, 224, 226);
@@ -337,7 +337,7 @@ main{
     flex-direction: column;
     
 }
-.items:nth-child(1) .items2 .item{
+.shoppingItem .items:nth-child(1) .items2 .item{
     border: 2px solid rgb(236, 239, 240);
     background-color: rgb(242, 248, 248);
     color: rgb(72, 72, 72);
@@ -348,22 +348,22 @@ main{
     
 }
 
-.items:nth-child(1) .items2 .item:nth-child(1){
+.shoppingItem .items:nth-child(1) .items2 .item:nth-child(1){
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.items:nth-child(1) .items2 .item:nth-child(2){
+.shoppingItem .items:nth-child(1) .items2 .item:nth-child(2){
     display: flex;
     
     justify-content: center;
     
 }
-.items:nth-child(1) .items2 .item:nth-child(2) div{
+.shoppingItem .items:nth-child(1) .items2 .item:nth-child(2) div{
     padding: 10px;
     text-align: center;
 }
-.items:nth-child(1) .items2 .item:nth-child(2) .circle{
+.shoppingItem .items:nth-child(1) .items2 .item:nth-child(2) .circle{
     border: 1px solid rgb(220, 220, 220);
     border-radius: 50%;
     width: 20px;
@@ -375,8 +375,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .shoppingItem .items:nth-child(3) span{
@@ -389,6 +387,54 @@ main{
     border: 1px solid rgb(220, 220, 220);
     border-radius: 50%;
     padding: 10px 16px;
+}
+
+/* 취미 */
+
+.hobbygItem:nth-child(1){
+    font-size: 17px;
+    color: gray;
+    margin: 20px;
+    font-weight: 600;
+
+}
+
+
+.hobbygItem:nth-child(1) span{
+    margin-right: 5px;
+}
+.hobbygItem:nth-child(1) .slice{
+    color: rgb(220, 220, 220);
+    font-weight: 100;
+}
+
+.hobbygItem:nth-child(1) span:nth-child(1){
+    color: black;
+}
+
+.hobbygItem:nth-child(2){
+    display: flex;
+    margin: 15px 15px;
+    background-color: rgb(244, 246, 249);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    flex-basis: 80%;
+}
+
+.hobbygItem:nth-child(3){
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+
+}
+
+.hobbygItem:nth-child(3) .items{
+    width: 80px;
+    height: 100px;
+    background-color: rgb(219, 224, 226);
+
 }
 /* aside */
 aside{
