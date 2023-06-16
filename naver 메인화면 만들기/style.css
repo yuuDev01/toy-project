@@ -423,18 +423,21 @@ main{
 }
 
 .hobbygItem:nth-child(3){
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 60%;
+    
 
 }
 
 .hobbygItem:nth-child(3) .items{
-    width: 80px;
+    
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hobbygItem:nth-child(3) .items .item .img{
+    width: 200px;
     height: 100px;
     background-color: rgb(219, 224, 226);
-
 }
 /* aside */
 aside{
