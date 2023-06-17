@@ -1,11 +1,17 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body{
-    padding-top: 10px;
+    margin: 0 auto;
+    height: 1920px ;
+    width: 1280px ;
+    font-family:'NANUMGOTHIC',sans-serif;
+    /* padding-top: 10px;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5%; */
 }
 .container{
+    
     display: grid;
-    border: 1px solid;
+    /* border: 1px solid; */
     grid-template-areas: 
     "header header header header header"
     "main main main aside aside"
@@ -23,17 +29,23 @@ nav {
 }
 
 main {
+    width: 830px;
+    margin-top: 50px;
+    margin-right: 29px;
     grid-area: main;
     /* background-color: aquamarine; */
 }
 
 section {
+    margin-top: 10px;
     background-color: rgb(97, 97, 253);
 }
 
 aside {
+    width: 420px ;
+    margin-top: 50px;
     grid-area: aside;
-    background-color: rgb(255, 195, 83);
+    /* background-color: rgb(255, 195, 83); */
 }
 
 footer {
@@ -78,7 +90,7 @@ footer {
 .searchForm{ 
     display: flex;
     width:650px;
-    border: 1px solid rgb(76, 196, 76);
+    border: 1px solid rgb(76, 196, 136);
     border-radius: 30px;
     font-size: 30px;  
 }
@@ -96,7 +108,7 @@ footer {
 }
 .searchForm span .fa-n{
     margin-left: 20px;
-    color : rgb(76, 196, 76);
+    color : rgb(76, 196, 136);
 }
 .searchForm span .fa-keyboard{
     color : rgb(152, 152, 152);
@@ -104,11 +116,11 @@ footer {
 
 .searchForm span .fa-caret-down{
     font-size: 15px;
-    color : rgb(76, 196, 76);
+    color : rgb(76, 196, 122);
 }
 
 .searchForm span .fa-magnifying-glass{
-    color : rgb(96, 228, 96);
+    color : rgb(76, 196, 122);
 }
 
 /* nav 메뉴 */
@@ -130,13 +142,14 @@ footer {
 .headerItem nav .navItem .icon{
     border: solid 1px rgb(234, 234, 234);
     font-size: 30px;
-    color: rgb(76, 196, 76);
+    color: rgb(76, 196, 122);
     border-radius: 15px;
     text-align: center;
     width: 45px;
     height: 45px;
     box-shadow: 1px 1px 3px 1px rgb(234, 234, 234);
     margin-bottom: 5px;
+    
 }
 
 .headerItem nav .navItem .iconName{
@@ -146,7 +159,7 @@ footer {
 
 /* main */
 main{
-    margin-top: 50px;
+    
     /* margin: 0 20px 0 0; */
 }
 
@@ -159,7 +172,7 @@ main{
     
 }
 .mainContainer section{
-    margin-top: 10px;
+    
     border: 2px solid rgb(220, 220, 220);
     background-color: white;
     border-radius: 5px;  
@@ -435,11 +448,52 @@ main{
 }
 
 .hobbygItem:nth-child(3) .items .item .img{
-    width: 200px;
+    width: 190px;
     height: 100px;
     background-color: rgb(219, 224, 226);
 }
 /* aside */
+
 aside{
-    margin-top: 50px;
+    
+}
+aside .item{
+    
+    margin-top: 10px;
+    border: 2px solid rgb(220, 220, 220);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.loginContainer{
+    padding: 10px;
+    text-align: center;
+}
+
+.loginContainer div{
+    margin: 10px;
+    font-size: 14px;
+    
+}
+.loginContainer div:nth-child(1){
+
+}
+.loginContainer div:nth-child(2){
+    background-color: rgb(76, 196, 122);
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    
+    
+}
+.loginContainer div:nth-child(2) .naver{
+    font: bold 20px sans-serif; 
+}
+
+.loginContainer div:nth-child(2) .login{
+    vertical-align:middle; 
+    display:inline-block;
+}
+.loginContainer div:nth-child(3){
+    
 }
