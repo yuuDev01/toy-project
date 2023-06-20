@@ -503,11 +503,11 @@ aside .item:nth-child(2){
 }
 
 aside .item:nth-child(3){
-
+    padding: 10px;
 }
 
 aside .weather .items {
-    vertical-align: middle;
+    display: flex;
     
 }
 
@@ -521,5 +521,9 @@ aside .weather .items .we2{
 }
 
 aside .weather .items .we3{
-    
+    /* 오른쪽 정렬 */
+}
+
+aside .item:nth-child(4){
+    padding: 10px;
 }
