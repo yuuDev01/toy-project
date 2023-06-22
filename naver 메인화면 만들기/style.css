@@ -527,3 +527,24 @@ aside .weather .items .we3{
 aside .item:nth-child(4){
     padding: 10px;
 }
+aside .item:nth-child(5){
+    padding: 10px;
+}
+aside .item:nth-child(5) .items{
+}
+
+aside .item:nth-child(5) .items:nth-child(1){
+    font : bold 20px sans-serif; 
+
+}
+.item:nth-child(5) .items .itemB{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.item:nth-child(5) .items .itemB .widget{
+    flex: 1 1 40%;
+    background-color: rgb(246, 246, 137);
+    height: 100px;
+}
