@@ -529,12 +529,16 @@ aside .item:nth-child(4){
 }
 aside .item:nth-child(5){
     padding: 10px;
+    background-color: rgb(244, 246, 249);
 }
 aside .item:nth-child(5) .items{
+    
+
 }
 
 aside .item:nth-child(5) .items:nth-child(1){
     font : bold 20px sans-serif; 
+    
 
 }
 .item:nth-child(5) .items .itemB{
@@ -545,6 +549,14 @@ aside .item:nth-child(5) .items:nth-child(1){
 
 .item:nth-child(5) .items .itemB .widget{
     flex: 1 1 40%;
-    background-color: rgb(246, 246, 137);
+    background-color: white;
     height: 100px;
+    margin: 10px 0 10px 0;
+    border: solid 1px rgb(220, 220, 220);
+    border-radius: 5px;
+
+    
+}
+.item:nth-child(5) .items .itemB .widget:nth-child(odd){
+    margin-right: 10px;
 }
