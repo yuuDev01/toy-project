@@ -465,6 +465,7 @@ aside .item{
     border-radius: 5px;
 }
 
+/* 로그인 */
 .loginContainer{
     padding: 10px;
     text-align: center;
@@ -483,6 +484,9 @@ aside .item{
     color: white;
     height: 50px;
     border-radius: 5px;
+    display: flex;
+justify-content: center;
+align-items: center;
     
     
 }
@@ -498,6 +502,7 @@ aside .item{
     
 }
 
+/* 광고 */
 aside .item:nth-child(2){
     height: 200px;
 }
@@ -506,6 +511,7 @@ aside .item:nth-child(3){
     padding: 10px;
 }
 
+/* 날씨 */
 aside .weather .items {
     display: flex;
     
@@ -524,9 +530,20 @@ aside .weather .items .we3{
     /* 오른쪽 정렬 */
 }
 
+/* 주식 */
+
 aside .item:nth-child(4){
     padding: 10px;
 }
+
+.stocks{
+
+}
+
+.stocks .stock{
+    display: flex;
+}
+
 aside .item:nth-child(5){
     padding: 10px;
     background-color: rgb(244, 246, 249);
@@ -541,7 +558,7 @@ aside .item:nth-child(5) .items:nth-child(1){
     
 
 }
-.item:nth-child(5) .items .itemB{
+.item:nth-hild(5)c .items .itemB{
     display: flex;
     flex-wrap: wrap;
     
